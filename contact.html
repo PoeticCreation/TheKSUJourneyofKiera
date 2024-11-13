@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding and ensure mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Kiera</title>
+    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Header with navigation -->
+    <!-- Header section with navigation menu -->
     <header>
         <h1>Contact Kiera Williams</h1>
         <nav>
@@ -21,32 +21,36 @@
         </nav>
     </header>
 
-    <!-- This is the main contact form section -->
+    <!-- Contact form section -->
     <main>
-        <section>
-            <h2>Contact Me</h2>
-            <!-- Contact form with the Node.js backend submission -->
-            <form id="contact-form" method="POST" action="submit-form.js">
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <!-- Form for collecting user input -->
+            <form id="contact-form" method="POST" action="/submit-form">
+                <!-- Input field for the user's name -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Full Name" required>
 
+                <!-- Input field for the user's email -->
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
 
+                <!-- Textarea for the user's message -->
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
 
-                <button type="submit">Send</button>
+                <!-- Button to submit the form -->
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Kiera Williams</p>
     </footer>
 
-    <!-- This is the JavaScript for form submission (use Node.js backend) -->
+    <!-- JavaScript file for form handling -->
     <script src="submit-form.js"></script>
 </body>
 </html>
