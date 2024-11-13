@@ -1,135 +1,94 @@
-/* Margin */
+/* Reset margins, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and background Styling */
+/* Basic page styling for a clean layout */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text color */
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    padding: 0 20px; /* Space around the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Header styling */
+/* Styling for the header at the top */
 header {
-    background-color: #333;
+    background-color: #1e3a5f; /* Dark blue for header */
     color: white;
     text-align: center;
+    width: 100%;
     padding: 20px 0;
+    position: sticky;
+    top: 0; /* Header stays visible on scroll */
 }
 
-/* Styling for the main header title */
+/* Main title in the header */
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-/* Styling for navigation menu links */
+/* Navigation bar styles */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #007BFF;
+    color: #007bff; /* Light blue on hover */
 }
 
-/* Main content styling */
+/* Main content area for each page */
 main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+    max-width: 1000px;
+    margin: 20px auto;
     text-align: center;
 }
 
-/* Bio content section with my photo image on the left and text on the right */
+/* Styling for the about section with bio */
 .bio-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 20px;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
 }
 
 /* Styling for the bio image */
 .bio-photo {
-    width: 250px;
+    width: 300px;
+    height: auto;
     border-radius: 50%;
-    margin-right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the bio text block */
+/* Styling for the text section next to the image */
 .bio-text {
-    max-width: 600px;
+    max-width: 500px;
     text-align: left;
-}
-
-/* Contact form styling */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Input and textarea styling */
-form input, form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Button styling */
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-/* Button hover effect */
-button:hover {
-    background-color: #0056b3;
 }
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color: #1e3a5f;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Footer text styling */
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    padding: 15px;
+    margin-top: 40px;
 }
